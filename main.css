@@ -16,6 +16,7 @@ input {
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .nav-bar__container {
@@ -28,10 +29,24 @@ button {
   margin: auto;
 }
 
-.nav-bar__left {
+.nav-bar__left,
+.nav-bar__center,
+.nav-bar__right {
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 33%;
+}
+
+.nav-bar__left {
+  justify-content: flex-start;
+}
+
+.nav-bar__center {
+  justify-content: center;
+}
+
+.nav-bar__right {
+  justify-content: flex-end;
 }
 
 .nav-bar__logo {
@@ -59,13 +74,7 @@ button {
 
 .search-bar::placeholder {
   text-align: center;
-  color: #00000060;
-}
-
-.nav-bar__right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #00000080;
 }
 
 .nav-bar__right img {
